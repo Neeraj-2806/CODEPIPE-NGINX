@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -f /usr/share/nginx/html/index.html
+rm -f /var/www/html/index.nginx-debian.html

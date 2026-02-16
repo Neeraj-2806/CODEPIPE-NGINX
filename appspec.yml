@@ -7,12 +7,12 @@ files:
 
 hooks:
   BeforeInstall:
-    - location: scripts/install_nginx.sh
+    - location: scripts/delete-default.sh
       timeout: 300
       runas: root
 
   AfterInstall:
-    - location: scripts/move_files.sh
+    - location: scripts/move-files.sh
       timeout: 300
       runas: root
 
