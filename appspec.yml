@@ -15,6 +15,9 @@ hooks:
     - location: scripts/move-files.sh
       timeout: 300
       runas: root
+    - location: scripts/change_permission.sh
+      timeout: 300
+      runas: root
 
   ApplicationStart:
     - location: scripts/start_nginx.sh
