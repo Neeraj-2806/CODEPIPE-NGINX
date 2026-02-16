@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 
 files:
-  - source: /
-pwd    destination: /home/ubuntu/deploy-temp/
+  - source: index.html
+    destination: /home/ubuntu/deploy-temp/
 
 hooks:
   BeforeInstall:
