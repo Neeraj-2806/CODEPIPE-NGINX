@@ -4,11 +4,15 @@ os: linux
 files:
   - source: /
     destination: /usr/share/nginx/html/
-    overwrite: true
 
 hooks:
   BeforeInstall:
     - location: scripts/install_nginx.sh
+      timeout: 300
+      runas: root
+
+  AfterInstall:
+    - location: scripts/delete_default.sh
       timeout: 300
       runas: root
 
