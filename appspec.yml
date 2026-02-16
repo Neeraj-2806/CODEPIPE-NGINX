@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /usr/share/nginx/html/
+    destination: /home/ubuntu/deploy-temp/
 
 hooks:
   BeforeInstall:
@@ -12,7 +12,7 @@ hooks:
       runas: root
 
   AfterInstall:
-    - location: scripts/delete_default.sh
+    - location: scripts/move_files.sh
       timeout: 300
       runas: root
 
